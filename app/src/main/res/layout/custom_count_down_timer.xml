@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  android:id="@+id/clMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/squareColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/clHour"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimerDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="360"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="DAY"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@id/tvTimerDay"
+            app:layout_constraintStart_toStartOf="@id/tvTimerDay"
+            app:layout_constraintTop_toBottomOf="@id/tvTimerDay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHour"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/squareColor"
+        app:layout_constraintEnd_toStartOf="@id/clMinute"
+        app:layout_constraintBottom_toBottomOf="@id/clDay"
+        app:layout_constraintStart_toEndOf="@id/clDay"
+        app:layout_constraintTop_toTopOf="@id/clDay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimerHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="360"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Hour"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@id/tvTimerHour"
+            app:layout_constraintStart_toStartOf="@id/tvTimerHour"
+            app:layout_constraintTop_toBottomOf="@id/tvTimerHour" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMinute"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/squareColor"
+        app:layout_constraintBottom_toBottomOf="@id/clHour"
+        app:layout_constraintStart_toEndOf="@id/clHour"
+        app:layout_constraintEnd_toStartOf="@id/clSecond"
+        app:layout_constraintTop_toTopOf="@id/clHour">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimerMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="360"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Minute"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@id/tvTimerMinute"
+            app:layout_constraintStart_toStartOf="@id/tvTimerMinute"
+            app:layout_constraintTop_toBottomOf="@id/tvTimerMinute" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSecond"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/squareColor"
+        app:layout_constraintBottom_toBottomOf="@id/clHour"
+        app:layout_constraintStart_toEndOf="@id/clMinute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/clHour">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimerSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="360"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Second"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="@id/tvTimerSecond"
+            app:layout_constraintStart_toStartOf="@id/tvTimerSecond"
+            app:layout_constraintTop_toBottomOf="@id/tvTimerSecond" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

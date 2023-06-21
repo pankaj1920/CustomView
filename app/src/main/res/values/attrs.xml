@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageTextView">
+        <attr name="image" format="reference" />
+        <!--        <attr name="text" format="string" />-->
+    </declare-styleable>
+
+    <declare-styleable name="CustomView">
+        <attr name="square_color" format="color" />
+        <attr name="square_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonWithProgressBar">
+        <attr name="text" format="string" />
+        <attr name="enable" format="boolean" />
+        <attr name="backgroundClor" format="color" />
+        <attr name="custom_txt_color" format="color" />
+        <attr name="size" format="enum">
+            <enum name="DEFAULT" value="0" />
+            <enum name="MINI" value="1" />
+            <enum name="LARGE" value="2" />
+            <enum name="LARGEST" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CountDownTimer">
+        <attr name="timeDate" format="string" />
+        <attr name="timerDateFormat" format="string" />
+        <attr name="timerInMilliSecond" format="string" />
+        <attr name="backgroundColor" format="color|reference" />
+        <attr name="backgroundImg" format="reference" />
+        <attr name="timerBgColor" format="color|reference" />
+        <attr name="timerBackgroundImg" format="reference" />
+
+    </declare-styleable>
+</resources>
