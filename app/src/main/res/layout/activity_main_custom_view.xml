@@ -9,12 +9,11 @@
     <com.example.views.CustomView
         android:id="@+id/customView"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        app:square_size="200dp"
-        app:square_color="@color/squareColor"
+        android:layout_height="200dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:square_color="@color/squareColor"
+        app:square_size="100dp" />
 
     <Button
         android:id="@+id/swapColor"
@@ -22,18 +21,30 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Swap Color"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/customView"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customView" />
 
-   <com.example.customview.CustomCountDownTimer
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="30dp"
-       app:timeDate="2023-06-23 07:33:32"
-       app:timerDateFormat="yyyy-MM-dd HH:mm:ss"
-       app:backgroundColor="@color/red"
-       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toBottomOf="@id/swapColor"/>
+    <com.example.customview.CustomCountDownTimer
+        android:id="@+id/tvTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:backgroundColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/swapColor"
+        app:timeDate="2023-06-23 07:33:32"
+        app:timerDateFormat="yyyy-MM-dd HH:mm:ss" />
+
+    <com.example.customview.SwipeBarGraph
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer"
+        app:progressCount="50"
+        app:progressDesc="Music" />
 </androidx.constraintlayout.widget.ConstraintLayout>

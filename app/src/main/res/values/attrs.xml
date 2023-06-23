@@ -31,6 +31,17 @@
         <attr name="backgroundImg" format="reference" />
         <attr name="timerBgColor" format="color|reference" />
         <attr name="timerBackgroundImg" format="reference" />
+    </declare-styleable>
 
+    <declare-styleable name="SwipeBarGraph">
+        <attr name="progressCount" format="integer" />
+        <attr name="progressDesc" format="string" />
+        <attr name="graphColor" format="color|reference" />
+        <attr name="graphCountTxtColor" format="color|reference" />
+        <attr name="graphDecTxtColor" format="color|reference" />
+        <attr name="enableSwipe" format="boolean" />
+        <attr name="progressCountVisible" format="boolean"/>
+        <attr name="progressDecVisible" format="boolean"/>
+        <attr name="progressAnimation" format="boolean"/>
     </declare-styleable>
 </resources>
